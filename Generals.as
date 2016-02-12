@@ -26,7 +26,7 @@ package {
 			units.push(new Unit(this, new Point(300, 160)));
 			units.push(new Unit(this, new Point(300, 60)));
 			buildings.push(new Building(this, new Point(400, 140)));
-			new CircleSelectionTool(this);
+			new SelectionTool(this);
 			stage.addEventListener(MouseEvent.CLICK, send);
 			addEventListener(Event.ENTER_FRAME, gameCycle);
 		}
